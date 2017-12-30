@@ -1,0 +1,5 @@
+#ifndef TINYJS_COMMON_DEFINE_H
+#define TINYJS_COMMON_DEFINE_H
+
+
+#endif

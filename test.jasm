@@ -1,0 +1,31 @@
+var globalVar
+var globalArray[256]
+func myAdd
+{
+    param x
+    param y
+    var sum
+    mov sum, x
+    add  sum, y
+    mov _retVal, sum #return返回
+}
+
+func myFunc
+{
+    var mySum
+    push 16
+    push 32
+    call myAdd
+    mov mySum, _retVal #ffff
+    mul mySum, 2
+    mov globalVar, mySum
+    mov globalArray[0], "fuck"
+    mov globalArray[1], "the"
+    mov globalArray[2], "world"
+}
+
+func _main
+{
+    call myFunc
+}
+

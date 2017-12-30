@@ -1,0 +1,5 @@
+name: mov
+opcode: 0
+opCount: 2
+op[0]: memref
+op[1]: int float string memref
